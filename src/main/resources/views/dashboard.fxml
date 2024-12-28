@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml" fx:controller="org.studentsphere.controllers.DashboardController">
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+            <Label text="Welcome to the Dashboard!" />
+            <Button text="Manage Students" onAction="#goToManageStudents" />
+            <Button text="Manage Courses" onAction="#goToManageCourses" />
+            <Button text="View Statistics" onAction="#goToStatistics" />
+            <Button text="Export Data" onAction="#goToExportData"/>
+            <Button text="Logout" onAction="#logout" />
+        </VBox>
+    </center>
+</BorderPane>

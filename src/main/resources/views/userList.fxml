@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml" fx:controller="org.studentsphere.controllers.UserListController">
+    <center>
+        <TableView fx:id="userTable">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID"/>
+                <TableColumn fx:id="usernameColumn" text="Nazwa użytkownika"/>
+                <TableColumn fx:id="emailColumn" text="Email"/>
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <Button text="Usuń zaznaczonego użytkownika" onAction="#deleteSelectedUser"/>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml" fx:controller="org.studentsphere.controllers.AppController">
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <MenuItem text="Exit" onAction="#exitApp" />
+            </Menu>
+            <Menu text="Help">
+                <MenuItem text="About" onAction="#showAbout" />
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <VBox spacing="10" alignment="CENTER" style="-fx-padding: 50;">
+            <Label text="Welcome to StudentSphere!" style="-fx-font-size: 24px;" />
+            <Button text="Register" onAction="#showRegisterForm" />
+            <Button text="Login" onAction="#showLoginForm" />
+        </VBox>
+    </center>
+</BorderPane>

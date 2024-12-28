@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml" fx:controller="org.studentsphere.controllers.AddAdminController" spacing="10" alignment="CENTER">
+    <TextField fx:id="usernameField" promptText="Username"/>
+    <TextField fx:id="emailField" promptText="Email"/>
+    <PasswordField fx:id="passwordField" promptText="Password"/>
+    <HBox spacing="10">
+        <Button text="Add" onAction="#addAdmin"/>
+        <Button text="Cancel" onAction="#goToManageAdmins"/>
+    </HBox>
+</VBox>
